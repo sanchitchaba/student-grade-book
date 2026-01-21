@@ -21,7 +21,6 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 ## Tech Stack
 - Java 17
 - JUnit 5
-- Maven
 - Object-Oriented Design (SOLID principles)
 
 ## Project Structure
@@ -43,7 +42,6 @@ gradebook/
 ## Setup Instructions
 - Prerequisites
     - Java 17+
-    - Maven 3.8+
 
 - Build & Run Tests
     - Open the test classes under src/test/java
