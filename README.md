@@ -47,10 +47,14 @@ gradebook/
     - Maven 3.8+
 
 - Build & Run Tests
-    '''mvn clean test'''
+    ```java
+    mvn clean test
+    ```
 
 - Run Application (Main class)
-      '''mvn exec:java'''
+    ```java
+    mvn exec:java
+    ```
 
 ## Sample Usage
 - Input (Programmatic)
