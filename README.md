@@ -38,7 +38,6 @@ gradebook/
 │       ├── entity/        # Entity unit tests
 │       ├── enums/         # Enum tests
 │       └── service/impl/  # Service tests
-└── pom.xml
 ```
 
 ## Setup Instructions
@@ -47,14 +46,16 @@ gradebook/
     - Maven 3.8+
 
 - Build & Run Tests
-    ```java
-    mvn clean test
-    ```
+    - Open the test classes under src/test/java
+    - Right-click and run:
+          - Individual test classes, or
+          - Entire test package
+    - JUnit tests will execute using the IDE’s test runner.
 
 - Run Application (Main class)
-    ```java
-    mvn exec:java
-    ```
+    - Open the project in your IDE
+    - Locate the Main class
+    - Run the main() method directly from the IDE
 
 ## Sample Usage
 - Input (Programmatic)
@@ -84,6 +85,3 @@ Cumulative GPA: 3.00
 - Derived values (final score, GPA) are not stored, only computed.
 - All custom exceptions extend RuntimeException and include internal status codes.
 - Thread safety is not required (single-user academic system).
-
-## Build & Test
-mvn clean test
