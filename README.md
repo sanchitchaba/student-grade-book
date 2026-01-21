@@ -5,15 +5,15 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 ## Features
 - Manage students and course enrollments
 - Support weighted grading categories:
--- Homework (20%)
--- Quizzes (20%)
--- Midterm (25%)
--- Final Exam (35%)
+    - Homework (20%)
+    - Quizzes (20%)
+    - Midterm (25%)
+    - Final Exam (35%)
 - Calculate:
--- Category averages
--- Final weighted course grades
--- Letter grades (A–F)
--- Cumulative GPA (credit-hour weighted)
+    - Category averages
+    - Final weighted course grades
+    - Letter grades (A–F)
+    - Cumulative GPA (credit-hour weighted)
 - Generate formatted student transcripts
 - Robust validation and custom exception handling
 - Full JUnit test coverage for core logic
@@ -25,7 +25,7 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 - Object-Oriented Design (SOLID principles)
 
 ## Project Structure
-gradebook/
+'''gradebook/
 ├── src/
 │   ├── main/java/com/intuit/gradebook/
 │   │   ├── entity/        # Student, Course, Assignment
@@ -37,34 +37,34 @@ gradebook/
 │       ├── entity/        # Entity unit tests
 │       ├── enums/         # Enum tests
 │       └── service/impl/  # Service tests
-└── pom.xml
+└── pom.xml'''
 
 ## Setup Instructions
 - Prerequisites
--- Java 17+
--- Maven 3.8+
+    - Java 17+
+    - Maven 3.8+
 
 - Build & Run Tests
--- mvn clean test
+    '''mvn clean test'''
 
 - Run Application (Main class)
--- mvn exec:java
+      '''mvn exec:java'''
 
 ## Sample Usage
 - Input (Programmatic)
--- service.addStudent("S1", "Alice");
+'''service.addStudent("S1", "Alice");
 service.enrollInCourse("S1", "Math", 3);
 
 service.addAssignment("S1", "Math",
     new Assignment("HW1", 85, 100, AssignmentCategory.HOMEWORK));
 
 service.addAssignment("S1", "Math",
-    new Assignment("Final", 90, 100, AssignmentCategory.FINAL_EXAM));
+    new Assignment("Final", 90, 100, AssignmentCategory.FINAL_EXAM));'''
 
 - Output
--- Transcript for Alice
+'''Transcript for Alice
 Math: 88.75% (B)
-Cumulative GPA: 3.00
+Cumulative GPA: 3.00'''
 
 ## Key Assumptions
 - All scores are percentages, derived from pointsEarned / pointsPossible.
