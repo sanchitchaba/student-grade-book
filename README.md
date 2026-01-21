@@ -25,7 +25,7 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 - Object-Oriented Design (SOLID principles)
 
 ## Project Structure
-'''gradebook/
+gradebook/
 ├── src/
 │   ├── main/java/com/intuit/gradebook/
 │   │   ├── entity/        # Student, Course, Assignment
@@ -37,7 +37,7 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 │       ├── entity/        # Entity unit tests
 │       ├── enums/         # Enum tests
 │       └── service/impl/  # Service tests
-└── pom.xml'''
+└── pom.xml
 
 ## Setup Instructions
 - Prerequisites
@@ -52,7 +52,8 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 
 ## Sample Usage
 - Input (Programmatic)
-'''service.addStudent("S1", "Alice");
+```java
+service.addStudent("S1", "Alice");
 service.enrollInCourse("S1", "Math", 3);
 
 service.addAssignment("S1", "Math",
