@@ -25,6 +25,7 @@ A Java-based student gradebook system that manages courses, assignments, weighte
 - Object-Oriented Design (SOLID principles)
 
 ## Project Structure
+```java
 gradebook/
 ├── src/
 │   ├── main/java/com/intuit/gradebook/
@@ -38,6 +39,7 @@ gradebook/
 │       ├── enums/         # Enum tests
 │       └── service/impl/  # Service tests
 └── pom.xml
+```
 
 ## Setup Instructions
 - Prerequisites
@@ -60,12 +62,15 @@ service.addAssignment("S1", "Math",
     new Assignment("HW1", 85, 100, AssignmentCategory.HOMEWORK));
 
 service.addAssignment("S1", "Math",
-    new Assignment("Final", 90, 100, AssignmentCategory.FINAL_EXAM));'''
+    new Assignment("Final", 90, 100, AssignmentCategory.FINAL_EXAM));
+```
 
 - Output
-'''Transcript for Alice
+```java
+Transcript for Alice
 Math: 88.75% (B)
-Cumulative GPA: 3.00'''
+Cumulative GPA: 3.00
+```
 
 ## Key Assumptions
 - All scores are percentages, derived from pointsEarned / pointsPossible.
